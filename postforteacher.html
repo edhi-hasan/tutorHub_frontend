@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="script/script.js"></script>
+</head>
+<body class=" bg-slate-100">
+
+    <!-- navbar -->
+    <header class="relative bg-slate-100">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="w-20 py-5 font-bold text-3xl">
+                <a href="">
+                    <span class="text-blue-600">Tutor</span>Hub
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6 text-blue-900 font-semibold">
+                    <li><a href="index.html" class="hover:text-orange-700 ease duration-200">Home</a></li>
+                    <li><a href="teacherpost.html" class="hover:text-orange-700 ease duration-200">Tuition Post</a></li>
+                    <li><a href="teacherprofile.html" class="hover:text-orange-700 ease duration-200">Tutor Profile</a></li>
+                    <li><a href="#contact" class="hover:text-orange-700 ease duration-200">Contact</a></li>
+                    <li><a href="#Features" class="hover:text-orange-700 ease duration-200">Features</a></li>
+                    <li><a href="signup.html" class="hover:text-orange-700 ease duration-200">Sign Up</a></li>
+                    <li><a href="login.html" class="hover:text-orange-700 ease duration-200">Login</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Logout</a></li>
+                </ul>
+            </div>
+            <!-- mobile screen -->
+            <div id="humburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="menu" class="hidden mt-20 absolute inset-0">
+                <ul class="h-60 grid place-items-center text-blue-900 font-semibold">
+                    <li><a href="index.html" class="hover:text-orange-700 ease duration-200 hlink">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200 hlink">Tuition Post</a></li>
+                    <li><a href="teacherprofile.html" class="hover:text-orange-700 ease duration-200 hlink">Tutor Profile</a></li>
+                    <li><a href="#contact" class="hover:text-orange-700 ease duration-200">Contact</a></li>
+                    <li><a href="#Features" class="hover:text-orange-700 ease duration-200">Features</a></li>
+                    <li><a href="signup.html" class="hover:text-orange-700 ease duration-200">Sign Up</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Login</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+        <div class="w-full max-w-2xl bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-6 text-center">Post a Teacher Requirement</h2>
+            <form action="#" method="POST" class="space-y-4">
+                
+                <!-- Contact Details -->
+                <div>
+                    <label for="contact" class="block text-sm font-medium text-gray-700">Contact Number</label>
+                    <input
+                        type="tel"
+                        id="contact"
+                        name="contact"
+                        placeholder="Enter your contact number"
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        required
+                    />
+                </div>
+    
+                <!-- Subject -->
+                <div>
+                    <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="E.g., Math, Science"
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        required
+                    />
+                </div>
+    
+                <!-- Class -->
+                <div>
+                    <label for="class" class="block text-sm font-medium text-gray-700">Class</label>
+                    <input
+                        type="text"
+                        id="class"
+                        name="class"
+                        placeholder="E.g., Class 8, Class 10"
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        required
+                    />
+                </div>
+    
+                <!-- Medium -->
+                <div>
+                    <label for="medium" class="block text-sm font-medium text-gray-700">Medium</label>
+                    <select
+                        id="medium"
+                        name="medium"
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        required
+                    >
+                        <option value="" disabled selected>Select medium</option>
+                        <option value="english">English</option>
+                        <option value="bangla">Bangla</option>
+                    </select>
+                </div>
+    
+                <!-- Location -->
+                <div>
+                    <label for="location" class="block text-sm font-medium text-gray-700">Location</label>
+                    <input
+                        type="text"
+                        id="location"
+                        name="location"
+                        placeholder="Enter your location"
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        required
+                    />
+                </div>
+    
+                <!-- Additional Requirements -->
+                <div>
+                    <label for="requirements" class="block text-sm font-medium text-gray-700">Additional Requirements</label>
+                    <textarea
+                        id="requirements"
+                        name="requirements"
+                        rows="4"
+                        placeholder="Enter any additional requirements"
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    ></textarea>
+                </div>
+    
+                <!-- Submit Button -->
+                <div class="flex justify-center">
+                    <button
+                        type="submit"
+                        class="px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                        Submit Post
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

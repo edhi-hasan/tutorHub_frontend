@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="script/script.js"></script>
+</head>
+<body class=" bg-slate-100">
+    <header class="relative bg-slate-100">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="w-20 py-5 font-bold text-3xl">
+                <a href="">
+                    <span class="text-blue-600">Tutor</span>Hub
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6 text-blue-900 font-semibold">
+                    <li><a href="index.html" class="hover:text-orange-700 ease duration-200">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Tuition Post</a></li>
+                    <li><a href="teacherprofile.html" class="hover:text-orange-700 ease duration-200">Tutor Profile</a></li>
+                    <li><a href="#contact" class="hover:text-orange-700 ease duration-200">Contact</a></li>
+                    <li><a href="#Features" class="hover:text-orange-700 ease duration-200">Features</a></li>
+                    <li><a href="signup.html" class="hover:text-orange-700 ease duration-200">Sign Up</a></li>
+                    <li><a href="login.html" class="hover:text-orange-700 ease duration-200">Login</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Logout</a></li>
+                </ul>
+            </div>
+            <!-- mobile screen -->
+            <div id="humburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="menu" class="hidden mt-20 absolute inset-0">
+                <ul class="h-60 grid place-items-center text-blue-900 font-semibold">
+                    <li><a href="index.html" class="hover:text-orange-700 ease duration-200 hlink">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200 hlink">Tuition Post</a></li>
+                    <li><a href="teacherprofile.html" class="hover:text-orange-700 ease duration-200 hlink">Tutor Profile</a></li>
+                    <li><a href="#contact" class="hover:text-orange-700 ease duration-200">Contact</a></li>
+                    <li><a href="#Features" class="hover:text-orange-700 ease duration-200">Features</a></li>
+                    <li><a href="signup.html" class="hover:text-orange-700 ease duration-200">Sign Up</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Login</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="p-8">
+        <div class="max-w-5xl mx-auto bg-white rounded-lg shadow-lg">
+          <!-- Profile Header -->
+          <div class="bg-blue-600 rounded-t-lg p-6 flex flex-col sm:flex-row items-center">
+            <img
+              src="image/Edhi6185.jpg"
+              alt="Teacher Photo"
+              class="w-36 h-36 object-cover rounded-full border-4 border-white shadow-md mb-4 sm:mb-0 sm:mr-6"
+            />
+            <div class="text-center sm:text-left">
+              <h2 class="text-2xl font-semibold text-white">John Doe</h2>
+              <p class="text-lg text-blue-100">Math Tutor</p>
+              <p class="text-sm text-blue-200 mt-2">5 years of experience teaching high school students</p>
+            </div>
+          </div>
+      
+          <!-- Profile Details -->
+          <div class="p-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Basic Info -->
+              <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Basic Information</h3>
+                <ul class="space-y-2">
+                  <li>
+                    <span class="font-medium text-gray-700">Email:</span>
+                    <span class="text-gray-600">johndoe@example.com</span>
+                  </li>
+                  <li>
+                    <span class="font-medium text-gray-700">Phone:</span>
+                    <span class="text-gray-600">+1 (123) 456-7890</span>
+                  </li>
+                  <li>
+                    <span class="font-medium text-gray-700">Subjects:</span>
+                    <span class="text-gray-600">Math, Algebra, Geometry</span>
+                  </li>
+                  <li>
+                    <span class="font-medium text-gray-700">Location:</span>
+                    <span class="text-gray-600">New York, USA</span>
+                  </li>
+                </ul>
+              </div>
+      
+              <!-- Tuition Info -->
+              <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Tuition Details</h3>
+                <div class="bg-blue-100 p-4 rounded-lg shadow-md text-center">
+                  <p class="text-3xl font-bold text-blue-600">25</p>
+                  <p class="text-gray-700">Total Tuitions Taken</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- About Section -->
+            <div class="mt-8">
+              <h3 class="text-xl font-semibold text-blue-600 mb-4">About the Teacher</h3>
+              <p class="text-gray-700">
+                John Doe is an experienced math tutor specializing in helping high school students
+                excel in their studies. He focuses on building strong foundations in algebra and geometry,
+                ensuring that his students are well-prepared for exams and future challenges.
+              </p>
+            </div>
+      
+            <!-- Action Buttons -->
+            <div class="mt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+              <button class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition w-full sm:w-auto">
+                Contact Teacher
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+    
+    <footer class="bg-blue-900 text-white py-10">
+        <div class="container mx-auto px-4 md:px-8 lg:px-16">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
+                <!-- Logo and About -->
+                <div class="flex-1 text-center md:text-left">
+                    <h2 class="text-2xl font-bold">Tutor<span class="text-orange-400">Hub</span></h2>
+                    <p class="mt-4 text-gray-300">
+                        Your gateway to quality education. Find the best tutors and learning opportunities at TutorHub.
+                    </p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-orange-400">Home</a></li>
+                        <li><a href="#contact" class="hover:text-orange-400">Contact</a></li>
+                        <li><a href="#" class="hover:text-orange-400">Guardian Posts</a></li>
+                        <li><a href="#" class="hover:text-orange-400">Tutor Profiles</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="mt-10 text-center border-t border-gray-700 pt-4 text-gray-400 text-sm">
+                &copy; 2024 TutorHub. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="script/script.js"></script>
+</head>
+<body class=" bg-slate-100">
+    <header class="relative bg-slate-100">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="w-20 py-5 font-bold text-3xl">
+                <a href="">
+                    <span class="text-blue-600">Tutor</span>Hub
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6 text-blue-900 font-semibold">
+                    <li><a href="index.html" class="hover:text-orange-700 ease duration-200">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Tuition Post</a></li>
+                    <li><a href="teacherprofile.html" class="hover:text-orange-700 ease duration-200">Tutor Profile</a></li>
+                    <li><a href="#contact" class="hover:text-orange-700 ease duration-200">Contact</a></li>
+                    <li><a href="#Features" class="hover:text-orange-700 ease duration-200">Features</a></li>
+                    <li><a href="signup.html" class="hover:text-orange-700 ease duration-200">Sign Up</a></li>
+                    <li><a href="login.html" class="hover:text-orange-700 ease duration-200">Login</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Logout</a></li>
+                </ul>
+            </div>
+            <!-- mobile screen -->
+            <div id="humburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="menu" class="hidden mt-20 absolute inset-0">
+                <ul class="h-60 grid place-items-center text-blue-900 font-semibold">
+                    <li><a href="index.html" class="hover:text-orange-700 ease duration-200 hlink">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200 hlink">Tuition Post</a></li>
+                    <li><a href="teacherprofile.html" class="hover:text-orange-700 ease duration-200 hlink">Tutor Profile</a></li>
+                    <li><a href="#contact" class="hover:text-orange-700 ease duration-200">Contact</a></li>
+                    <li><a href="#Features" class="hover:text-orange-700 ease duration-200">Features</a></li>
+                    <li><a href="signup.html" class="hover:text-orange-700 ease duration-200">Sign Up</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Login</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="p-8">
+        <div class="grid grid-cols-1 mx-12 lg:grid-cols-12 gap-8">
+            <!-- Left Div: Category Section -->
+            <div class="lg:col-span-3 p-6 bg-white rounded-lg shadow-md h-screen sticky top-0">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-6">Categories</h2>
+                <ul class="space-y-4">
+                    <li>
+                        <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Math</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Science</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">English</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Medical</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Engineering</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Arabic</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Dance</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Guiter</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Art</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Right Div: Teacher Profiles -->
+            <div class="lg:col-span-9 bg-white rounded-lg shadow-md p-6 overflow-y-auto h-screen">
+                <h2 class="text-2xl text-center font-semibold text-blue-600 mb-6">Available Tutors</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Teacher Profile 1 -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <img src="image/Edhi6185.jpg" alt="Teacher 1" class="w-36 h-36 object-cover rounded-full mx-auto mb-4">
+                        <a href="tutorProfile.html"><h3 class="text-xl font-semibold text-blue-900 mb-2 text-center">Emily Johnson</h3></a>
+                        <p class="text-blue-700 text-center">Math Tutor</p>
+                        <p class="text-sm text-gray-600 mt-2 text-center">John has 5 years of teaching math to high school students.</p>
+                        <button class="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition w-full">Hire</button>
+                    </div>
+    
+                    <!-- Teacher Profile 2 -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <img src="image/Edhi6185.jpg" alt="Teacher 2" class="w-36 h-36 object-cover rounded-full mx-auto mb-4">
+                        <a href="tutorProfile.html"><h3 class="text-xl font-semibold text-blue-900 mb-2 text-center">Emily Johnson</h3></a>
+                        <p class="text-blue-700 text-center">Science Tutor</p>
+                        <p class="text-sm text-gray-600 mt-2 text-center">Jane specializes in English literature and creative writing.</p>
+                        <button class="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition w-full">Hire</button>
+                    </div>
+    
+                    <!-- Teacher Profile 3 -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <img src="image/Edhi6185.jpg" alt="Teacher 3" class="w-36 h-36 object-cover rounded-full mx-auto mb-4">
+                        <a href="tutorProfile.html"><h3 class="text-xl font-semibold text-blue-900 mb-2 text-center">Emily Johnson</h3></a>
+                        <p class="text-blue-700 text-center">English Tutor</p>
+                        <p class="text-sm text-gray-600 mt-2 text-center">Emily specializes in English literature and creative writing.</p>
+                        <button class="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition w-full">Hire</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="bg-blue-900 text-white py-10">
+        <div class="container mx-auto px-4 md:px-8 lg:px-16">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
+                <!-- Logo and About -->
+                <div class="flex-1 text-center md:text-left">
+                    <h2 class="text-2xl font-bold">Tutor<span class="text-orange-400">Hub</span></h2>
+                    <p class="mt-4 text-gray-300">
+                        Your gateway to quality education. Find the best tutors and learning opportunities at TutorHub.
+                    </p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-orange-400">Home</a></li>
+                        <li><a href="#contact" class="hover:text-orange-400">Contact</a></li>
+                        <li><a href="#" class="hover:text-orange-400">Guardian Posts</a></li>
+                        <li><a href="#" class="hover:text-orange-400">Tutor Profiles</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="mt-10 text-center border-t border-gray-700 pt-4 text-gray-400 text-sm">
+                &copy; 2024 TutorHub. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

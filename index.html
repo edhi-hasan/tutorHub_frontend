@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="script/script.js"></script>
+</head>
+<body class=" bg-slate-100">
+
+    <!-- navbar -->
+    <header class="relative bg-slate-100">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="w-20 py-5 font-bold text-3xl">
+                <a href="">
+                    <span class="text-blue-600">Tutor</span>Hub
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6 text-blue-900 font-semibold">
+                    <li><a href="index.html" class="hover:text-orange-700 ease duration-200">Home</a></li>
+                    <li><a href="teacherpost.html" class="hover:text-orange-700 ease duration-200">Tuition Post</a></li>
+                    <li><a href="teacherprofile.html" class="hover:text-orange-700 ease duration-200">Tutor Profile</a></li>
+                    <li><a href="#contact" class="hover:text-orange-700 ease duration-200">Contact</a></li>
+                    <li><a href="#Features" class="hover:text-orange-700 ease duration-200">Services</a></li>
+                    <li><a href="signup.html" class="hover:text-orange-700 ease duration-200">Sign Up</a></li>
+                    <li><a href="login.html" class="hover:text-orange-700 ease duration-200">Login</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Logout</a></li>
+                    <li><a href="dashboard.html" class="hover:text-orange-700 ease duration-200">Dashboard</a></li>
+                </ul>
+            </div>
+            <!-- mobile screen -->
+            <div id="humburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="menu" class="hidden mt-20 absolute inset-0">
+                <ul class="h-60 grid place-items-center text-blue-900 font-semibold">
+                    <li><a href="index.html" class="hover:text-orange-700 ease duration-200 hlink">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200 hlink">Tuition Post</a></li>
+                    <li><a href="teacherprofile.html" class="hover:text-orange-700 ease duration-200 hlink">Tutor Profile</a></li>
+                    <li><a href="#contact" class="hover:text-orange-700 ease duration-200">Contact</a></li>
+                    <li><a href="#Features" class="hover:text-orange-700 ease duration-200">Services</a></li>
+                    <li><a href="signup.html" class="hover:text-orange-700 ease duration-200">Sign Up</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Login</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    
+    <!-- hero section -->
+    <section id="hero" class="p-16 mt-0 transition-all duration-300  bg-slate-100">
+        <div class="relative h-5/6">
+            <!-- Centered Text -->
+            <div class="relative flex items-center justify-center md:h-96 h-2/3 text-center text-slate-600">
+                <div class="px-4 md:px-16">
+                    <!-- Responsive H1 -->
+                    <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold text-center">
+                        Your gateway to quality education <br> starts here.
+                    </h1>
+                    <!-- Responsive Paragraph -->
+                    <p class="mt-4 text-base sm:text-lg md:text-xl text-center">
+                        Discover qualified tutors for every subject, every class, and every need. Your child’s success starts with the 
+                        right guidance—find it here! From academic excellence to skill-building, find expert tutors who care.
+                    </p>
+                    <!-- Button -->
+                    <div class="mt-6 flex justify-center">
+                        <a href="postforteacher.html"><button class="mr-2 px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition">
+                            Post For teacher
+                        </button></a>
+                        <a href="teacherprofile.html"><button class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition">
+                            Find Tutor
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- leader board -->
+    <div class="bg-gray-100 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-extrabold text-blue-600 sm:text-4xl">
+              Leaderboard
+            </h2>
+            <p class="mt-2 text-lg text-gray-600">
+              Real-time stats of the tuition marketplace
+            </p>
+          </div>
+      
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Tuitions Available -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <div class="text-center">
+                <h3 class="text-2xl font-semibold text-gray-800">Tuitions Available</h3>
+                <p class="text-5xl font-bold text-green-600 mt-4">25</p>
+              </div>
+            </div>
+      
+            <!-- Teachers Available -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <div class="text-center">
+                <h3 class="text-2xl font-semibold text-gray-800">Teachers Available</h3>
+                <p class="text-5xl font-bold text-blue-600 mt-4">12</p>
+              </div>
+            </div>
+      
+            <!-- Pending Tuitions -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <div class="text-center">
+                <h3 class="text-2xl font-semibold text-gray-800">Pending Tuitions</h3>
+                <p class="text-5xl font-bold text-red-600 mt-4">8</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+    <!-- Features -->
+    <section id="Features" class="py-14 px-12 md:px-16 bg-gray-100">
+        <h2 class="text-3xl text-center mb-10 md:text-4xl font-bold text-blue-600">Our Amazing Services</h2>
+        <div class="flex flex-col md:flex-row items-center gap-9">
+            <!-- Left Side: Feature Details -->
+            <div class="flex-1">
+                <h4 class="text-xl text-center  md:text-xl font-bold text-gray-800">We provide Tutors</h4>
+                <p class="mt-4 text-gray-600">
+                    Explore our feature that makes your life easier. With this feature, you can achieve more in less time, 
+                    ensuring productivity and efficiency in your daily tasks.
+                </p>
+                <ul class="mt-6 space-y-3">
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check text-blue-600"></i> 
+                        <span>Feature benefit 1</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check text-blue-600"></i> 
+                        <span>Feature benefit 2</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check text-blue-600"></i> 
+                        <span>Feature benefit 3</span>
+                    </li>       
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check text-blue-600"></i> 
+                        <span>Feature benefit 3</span>
+                    </li>                    
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check text-blue-600"></i> 
+                        <span>Feature benefit 3</span>
+                    </li>
+                </ul>
+                <button class="mt-8 px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition">
+                    Learn More
+                </button>
+            </div>
+    
+            <!-- Right Side: Feature Image -->
+            <div class="flex-1">
+                <img src="image/home 3.jpg" alt="Feature Image" class="w-5/6 rounded-lg shadow-md">
+            </div>
+        </div>
+        <hr class="m-7">
+        <div class="flex flex-col mt-8 md:flex-row items-center gap-9">
+            <!-- Right Side: Feature Image -->
+            <div class="flex-1">
+                <img src="image/search.jpg" alt="Feature Image" class="w-5/6 rounded-lg shadow-md">
+            </div>
+            <!-- Left Side: Feature Details -->
+            <div class="flex-1">
+                <h4 class="text-xl text-center  md:text-xl font-bold text-gray-800">Post for teacher</h4>
+                <p class="mt-4 text-gray-600">
+                    Explore our feature that makes your life easier. With this feature, you can achieve more in less time, 
+                    ensuring productivity and efficiency in your daily tasks.
+                </p>
+                <ul class="mt-6 space-y-3">
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check text-blue-600"></i> 
+                        <span>Feature benefit 1</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check text-blue-600"></i> 
+                        <span>Feature benefit 2</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check text-blue-600"></i> 
+                        <span>Feature benefit 3</span>
+                    </li>       
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check text-blue-600"></i> 
+                        <span>Feature benefit 3</span>
+                    </li>                    
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check text-blue-600"></i> 
+                        <span>Feature benefit 3</span>
+                    </li>
+                </ul>
+                <button class="mt-8 px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition">
+                    Learn More
+                </button>
+            </div>
+    
+            
+        </div>
+    </section>
+
+
+    <section id="contact" class="bg-gray-100 py-16">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-600">Get in Touch</h2>
+                <p class="text-gray-600 mt-2">
+                    Have any questions or need help? Reach out to us using the form below.
+                </p>
+            </div>
+            <div class="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row items-center md:items-start space-y-10 md:space-y-0 md:space-x-10">
+            
+            <!-- Left Image Section -->
+            <div class="flex-1 mt-14">
+                <img src="image/hero.jpg" alt="Contact Us" class="rounded-lg shadow-lg">
+            </div>
+    
+            <!-- Right Form Section -->
+            <div class="flex-1 bg-white shadow-lg rounded-lg p-6 md:p-10">
+                <form action="#" method="POST" class="space-y-6">
+                    <!-- Name Field -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name"
+                            class="mt-1 p-1.5 block w-full rounded-md border-gray-300 shadow-md focus:border-blue-500 focus:ring-blue-500 sm:text-sm" required>
+                    </div>
+    
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email"
+                            class="mt-1 p-1.5 block w-full rounded-md border-gray-300 shadow-md focus:border-blue-500 focus:ring-blue-500 sm:text-sm" required> 
+                    </div>
+    
+                    <!-- Message Field -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Write your message here"
+                            class="mt-1 pt-2 pl-2 block w-full rounded-md border-gray-300 shadow-md focus:border-blue-500 focus:ring-blue-500 sm:text-sm" required></textarea>
+                    </div>
+    
+                    <!-- Submit Button -->
+                    <div class="text-left">
+                        <button type="submit"
+                            class="px-4 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-500 transition">
+                            Send 
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="bg-blue-900 text-white py-10">
+        <div class="container mx-auto px-4 md:px-8 lg:px-16">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
+                <!-- Logo and About -->
+                <div class="flex-1 text-center md:text-left">
+                    <h2 class="text-2xl font-bold">Tutor<span class="text-orange-400">Hub</span></h2>
+                    <p class="mt-4 text-gray-300">
+                        Your gateway to quality education. Find the best tutors and learning opportunities at TutorHub.
+                    </p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-orange-400">Home</a></li>
+                        <li><a href="#contact" class="hover:text-orange-400">Contact</a></li>
+                        <li><a href="#" class="hover:text-orange-400">Guardian Posts</a></li>
+                        <li><a href="#" class="hover:text-orange-400">Tutor Profiles</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="mt-10 text-center border-t border-gray-700 pt-4 text-gray-400 text-sm">
+                &copy; 2024 TutorHub. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+<script>
+    const humburger = document.querySelector('#humburger')
+    const menu = document.querySelector('#menu')
+    const hero = document.querySelector('#hero')
+    const fasolid = document.querySelector('.fa-solid')
+
+    humburger.addEventListener("click", () => {
+        menu.classList.toggle('hidden'); // Toggle the menu visibility
+        fasolid.classList.toggle('fa-xmark'); // Toggle the hamburger icon
+
+        // Add or remove margin from hero section based on menu visibility
+        if (menu.classList.contains('hidden')) {
+            hero.classList.remove('mt-[200px]'); // Remove margin if menu is closed
+        } else {
+            hero.classList.add('mt-[200px]'); // Add margin when menu is open
+        }
+    });
+
+</script>
+</body>
+</html>

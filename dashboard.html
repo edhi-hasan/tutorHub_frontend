@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="script/script.js"></script>
+</head>
+<body class=" bg-slate-100">
+    <header class="relative bg-slate-100">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="w-20 py-5 font-bold text-3xl">
+                <a href="">
+                    <span class="text-blue-600">Tutor</span>Hub
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6 text-blue-900 font-semibold">
+                    <li><a href="index.html" class="hover:text-orange-700 ease duration-200">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Tuition Post</a></li>
+                    <li><a href="teacherprofile.html" class="hover:text-orange-700 ease duration-200">Tutor Profile</a></li>
+                    <li><a href="#contact" class="hover:text-orange-700 ease duration-200">Contact</a></li>
+                    <li><a href="#Features" class="hover:text-orange-700 ease duration-200">Features</a></li>
+                    <li><a href="signup.html" class="hover:text-orange-700 ease duration-200">Sign Up</a></li>
+                    <li><a href="login.html" class="hover:text-orange-700 ease duration-200">Login</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Logout</a></li>
+                </ul>
+            </div>
+            <!-- mobile screen -->
+            <div id="humburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="menu" class="hidden mt-20 absolute inset-0">
+                <ul class="h-60 grid place-items-center text-blue-900 font-semibold">
+                    <li><a href="index.html" class="hover:text-orange-700 ease duration-200 hlink">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200 hlink">Tuition Post</a></li>
+                    <li><a href="teacherprofile.html" class="hover:text-orange-700 ease duration-200 hlink">Tutor Profile</a></li>
+                    <li><a href="#contact" class="hover:text-orange-700 ease duration-200">Contact</a></li>
+                    <li><a href="#Features" class="hover:text-orange-700 ease duration-200">Features</a></li>
+                    <li><a href="signup.html" class="hover:text-orange-700 ease duration-200">Sign Up</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Login</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="p-8">
+        <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-lg">
+          <!-- Dashboard Header -->
+          <div class="bg-blue-600 rounded-t-lg p-6 text-center">
+            <h1 class="text-3xl font-semibold text-white">Teacher Dashboard</h1>
+            <p class="text-blue-100 mt-2">Welcome, John Doe</p>
+          </div>
+      
+          <!-- Tuition Applications Table -->
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-6">Tuition Applications</h2>
+            <div class="overflow-x-auto">
+              <table class="table-auto w-full border-collapse border border-gray-300">
+                <thead>
+                  <tr class="bg-gray-200 text-gray-700">
+                    <th class="border border-gray-300 px-4 py-2">Guardian Name</th>
+                    <th class="border border-gray-300 px-4 py-2">Requested Subject</th>
+                    <th class="border border-gray-300 px-4 py-2">Class</th>
+                    <th class="border border-gray-300 px-4 py-2">Location</th>
+                    <th class="border border-gray-300 px-4 py-2">Status</th>
+                    <th class="border border-gray-300 px-4 py-2">Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Example Row: Pending Tuition -->
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2 text-center">Mr. Smith</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">Math</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">10th Grade</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">New York</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">
+                      <span class="bg-yellow-100 text-yellow-600 py-1 px-3 rounded-lg">Pending</span>
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">
+                      <button class="bg-blue-600 text-white py-1 px-4 rounded-lg hover:bg-blue-700 transition">View</button>
+                    </td>
+                  </tr>
+      
+                  <!-- Example Row: Accepted Tuition -->
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2 text-center">Mrs. Johnson</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">Science</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">8th Grade</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">Brooklyn</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">
+                      <span class="bg-green-100 text-green-600 py-1 px-3 rounded-lg">Accepted</span>
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">
+                      <button
+                        class="bg-blue-600 text-white py-1 px-4 rounded-lg hover:bg-blue-700 transition"
+                        onclick="showDetails('Mrs. Johnson', 'Science', '8th Grade', 'Brooklyn', '+1 (123) 456-7890')"
+                      >
+                        View
+                      </button>
+                    </td>
+                  </tr>
+      
+                  <!-- Example Row: Rejected Tuition -->
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2 text-center">Mr. Lee</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">English</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">12th Grade</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">Manhattan</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">
+                      <span class="bg-red-100 text-red-600 py-1 px-3 rounded-lg">Rejected</span>
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">
+                      <button class="bg-gray-500 text-white py-1 px-4 rounded-lg cursor-not-allowed">N/A</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Tuition Details Modal -->
+        <div
+          id="detailsModal"
+          class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+        >
+          <div class="bg-white rounded-lg shadow-lg p-6 w-96">
+            <h3 class="text-xl font-semibold text-blue-600 mb-4">Tuition Details</h3>
+            <ul class="space-y-2">
+              <li><span class="font-medium">Guardian Name:</span> <span id="guardianName"></span></li>
+              <li><span class="font-medium">Subject:</span> <span id="subject"></span></li>
+              <li><span class="font-medium">Class:</span> <span id="class"></span></li>
+              <li><span class="font-medium">Location:</span> <span id="location"></span></li>
+              <li><span class="font-medium">Guardian Number:</span> <span id="guardianNumber"></span></li>
+            </ul>
+            <div class="mt-6 flex justify-end">
+              <button
+                class="px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition"
+                onclick="closeModal()"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+    <footer class="bg-blue-900 text-white py-10">
+        <div class="container mx-auto px-4 md:px-8 lg:px-16">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
+                <!-- Logo and About -->
+                <div class="flex-1 text-center md:text-left">
+                    <h2 class="text-2xl font-bold">Tutor<span class="text-orange-400">Hub</span></h2>
+                    <p class="mt-4 text-gray-300">
+                        Your gateway to quality education. Find the best tutors and learning opportunities at TutorHub.
+                    </p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-orange-400">Home</a></li>
+                        <li><a href="#contact" class="hover:text-orange-400">Contact</a></li>
+                        <li><a href="#" class="hover:text-orange-400">Guardian Posts</a></li>
+                        <li><a href="#" class="hover:text-orange-400">Tutor Profiles</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-orange-400"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="mt-10 text-center border-t border-gray-700 pt-4 text-gray-400 text-sm">
+                &copy; 2024 TutorHub. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showDetails(name, subject, grade, location, number) {
+          document.getElementById('guardianName').textContent = name;
+          document.getElementById('subject').textContent = subject;
+          document.getElementById('class').textContent = grade;
+          document.getElementById('location').textContent = location;
+          document.getElementById('guardianNumber').textContent = number;
+      
+          document.getElementById('detailsModal').classList.remove('hidden');
+        }
+      
+        function closeModal() {
+          document.getElementById('detailsModal').classList.add('hidden');
+        }
+      </script>
+</body>
+</html>

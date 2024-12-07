@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="script/script.js"></script>
+</head>
+<body class=" bg-slate-100">
+
+    <!-- navbar -->
+    <header class="relative bg-slate-100">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="w-20 py-5 font-bold text-3xl">
+                <a href="">
+                    <span class="text-blue-600">Tutor</span>Hub
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6 text-blue-900 font-semibold">
+                    <li><a href="index.html" class="hover:text-orange-700 ease duration-200">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Tuition Post</a></li>
+                    <li><a href="teacherprofile.html" class="hover:text-orange-700 ease duration-200">Tutor Profile</a></li>
+                    <li><a href="#contact" class="hover:text-orange-700 ease duration-200">Contact</a></li>
+                    <li><a href="#Features" class="hover:text-orange-700 ease duration-200">Features</a></li>
+                    <li><a href="signup.html" class="hover:text-orange-700 ease duration-200">Sign Up</a></li>
+                    <li><a href="login.html" class="hover:text-orange-700 ease duration-200">Login</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Logout</a></li>
+                </ul>
+            </div>
+            <!-- mobile screen -->
+            <div id="humburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="menu" class="hidden mt-20 absolute inset-0">
+                <ul class="h-60 grid place-items-center text-blue-900 font-semibold">
+                    <li><a href="index.html" class="hover:text-orange-700 ease duration-200 hlink">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200 hlink">Tuition Post</a></li>
+                    <li><a href="teacherprofile.html" class="hover:text-orange-700 ease duration-200 hlink">Tutor Profile</a></li>
+                    <li><a href="#contact" class="hover:text-orange-700 ease duration-200">Contact</a></li>
+                    <li><a href="#Features" class="hover:text-orange-700 ease duration-200">Features</a></li>
+                    <li><a href="signup.html" class="hover:text-orange-700 ease duration-200">Sign Up</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Login</a></li>
+                    <li><a href="#" class="hover:text-orange-700 ease duration-200">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="min-h-screen bg-gray-100 p-4">
+        <!-- Container -->
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row gap-4">
+                <!-- Left Div (Category Section) -->
+                <div class="bg-white fixed shadow-md rounded-lg p-4 md:w-1/4 sticky top-4 h-[calc(100vh-2rem)] overflow-y-auto">
+                    <h2 class="text-2xl font-semibold text-blue-600 mb-6">Categories</h2>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Math</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Science</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">English</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Medical</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Engineering</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Arabic</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Dance</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Guiter</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-lg text-blue-900 hover:text-orange-700 ease duration-200">Art</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Right Div (Teacher Need Posts) -->
+                <div class="bg-white shadow-md rounded-lg p-4 md:w-3/4">
+                    <h2 class="text-lg font-semibold mb-4 text-blue-600">Teacher Need Posts</h2>
+                    <!-- Example Post -->
+                    <div class="space-y-4">
+                        <!-- Post 1 -->
+                        <div class="border p-4 rounded-md hover:shadow-lg transition">
+                            <h3 class="text-blue-700 font-semibold">Looking for a Math Tutor</h3>
+                            <p class="text-gray-700 text-sm">
+                              A guardian is looking for a Math tutor for grade 8 students in Dhaka. Must have prior experience in teaching mathematics.
+                            </p>
+                            <div class="mt-2 text-gray-500 text-xs">Posted on: December 6, 2024</div>
+                            <a href="#" class="w-full">
+                                <button class="w-left bg-blue-600 text-white font-semibold mt-2 py-2 px-4 rounded-md hover:bg-blue-700 transition">Apply Now </button>
+                            </a>
+                              
+                          </div>
+                          
+                        <!-- Post 2 -->
+                        <div class="border p-4 rounded-md hover:shadow-lg transition">
+                            <h3 class="text-blue-700 font-semibold">Need an English Teacher</h3>
+                            <p class="text-gray-700 text-sm">Searching for an English tutor for class 5. The tutor should have good communication skills and patience.</p>
+                            <div class="mt-2 text-gray-500 text-xs">Posted on: December 5, 2024</div>
+                            <a href="#" class="w-full">
+                                <button class="w-left bg-blue-600 text-white font-semibold mt-2 py-2 px-4 rounded-md hover:bg-blue-700 transition">Apply Now </button>
+                            </a>
+                        </div>
+                        <!-- Post 3 -->
+                        <div class="border p-4 rounded-md hover:shadow-lg transition">
+                            <h3 class="text-blue-700 font-semibold">Science Teacher Needed</h3>
+                            <p class="text-gray-700 text-sm">Guardian is looking for a Science teacher to teach physics and chemistry for class 9.</p>
+                            <div class="mt-2 text-gray-500 text-xs">Posted on: December 4, 2024</div>
+                            <a href="#" class="w-full">
+                                <button class="w-left bg-blue-600 text-white font-semibold mt-2 py-2 px-4 rounded-md hover:bg-blue-700 transition">Apply Now </button>
+                            </a>
+                        </div>
+                        <!-- Post 4 -->
+                        <div class="border p-4 rounded-md hover:shadow-lg transition">
+                            <h3 class="text-blue-700 font-semibold">Science Teacher Needed</h3>
+                            <p class="text-gray-700 text-sm">Guardian is looking for a Science teacher to teach physics and chemistry for class 9.</p>
+                            <div class="mt-2 text-gray-500 text-xs">Posted on: December 4, 2024</div>
+                            <a href="#" class="w-full">
+                                <button class="w-left bg-blue-600 text-white font-semibold mt-2 py-2 px-4 rounded-md hover:bg-blue-700 transition">Apply Now </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
